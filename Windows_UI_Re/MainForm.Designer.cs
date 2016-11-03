@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.classBox = new System.Windows.Forms.GroupBox();
+            this.classBoxOuter = new System.Windows.Forms.GroupBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.searchingBox = new System.Windows.Forms.GroupBox();
+            this.searchingBoxOuter = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -50,46 +50,46 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.regionBox = new System.Windows.Forms.GroupBox();
+            this.regionBoxOuter = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.spiecesBox = new System.Windows.Forms.GroupBox();
+            this.spiecesBoxOuter = new System.Windows.Forms.GroupBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.operBox = new System.Windows.Forms.GroupBox();
+            this.operBoxOuter = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.IDBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.nameBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.classBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.schoolBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.healthBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.genderBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.typeBox = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.regionBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.phoneBox = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.postBox = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.dateBox = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.IDCardBox = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
@@ -104,11 +104,11 @@
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.classBox.SuspendLayout();
-            this.searchingBox.SuspendLayout();
-            this.regionBox.SuspendLayout();
-            this.spiecesBox.SuspendLayout();
-            this.operBox.SuspendLayout();
+            this.classBoxOuter.SuspendLayout();
+            this.searchingBoxOuter.SuspendLayout();
+            this.regionBoxOuter.SuspendLayout();
+            this.spiecesBoxOuter.SuspendLayout();
+            this.operBoxOuter.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -134,7 +134,6 @@
             // 
             // button3
             // 
-            
             this.button3.Location = new System.Drawing.Point(99, 20);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(66, 24);
@@ -144,7 +143,6 @@
             // 
             // button2
             // 
-            
             this.button2.Location = new System.Drawing.Point(186, 20);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(66, 24);
@@ -154,7 +152,6 @@
             // 
             // button1
             // 
-            
             this.button1.Location = new System.Drawing.Point(12, 20);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(66, 24);
@@ -163,28 +160,28 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.classBox);
-            this.flowLayoutPanel1.Controls.Add(this.searchingBox);
-            this.flowLayoutPanel1.Controls.Add(this.regionBox);
-            this.flowLayoutPanel1.Controls.Add(this.spiecesBox);
-            this.flowLayoutPanel1.Controls.Add(this.operBox);
+            this.flowLayoutPanel1.Controls.Add(this.classBoxOuter);
+            this.flowLayoutPanel1.Controls.Add(this.searchingBoxOuter);
+            this.flowLayoutPanel1.Controls.Add(this.regionBoxOuter);
+            this.flowLayoutPanel1.Controls.Add(this.spiecesBoxOuter);
+            this.flowLayoutPanel1.Controls.Add(this.operBoxOuter);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 63);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(841, 132);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // classBox
+            // classBoxOuter
             // 
-            this.classBox.Controls.Add(this.comboBox2);
-            this.classBox.Controls.Add(this.comboBox1);
-            this.classBox.Controls.Add(this.label2);
-            this.classBox.Controls.Add(this.label1);
-            this.classBox.Location = new System.Drawing.Point(3, 3);
-            this.classBox.Name = "classBox";
-            this.classBox.Size = new System.Drawing.Size(193, 126);
-            this.classBox.TabIndex = 0;
-            this.classBox.TabStop = false;
-            this.classBox.Text = "选择系与班级";
+            this.classBoxOuter.Controls.Add(this.comboBox2);
+            this.classBoxOuter.Controls.Add(this.comboBox1);
+            this.classBoxOuter.Controls.Add(this.label2);
+            this.classBoxOuter.Controls.Add(this.label1);
+            this.classBoxOuter.Location = new System.Drawing.Point(3, 3);
+            this.classBoxOuter.Name = "classBoxOuter";
+            this.classBoxOuter.Size = new System.Drawing.Size(193, 126);
+            this.classBoxOuter.TabIndex = 0;
+            this.classBoxOuter.TabStop = false;
+            this.classBoxOuter.Text = "选择系与班级";
             // 
             // comboBox2
             // 
@@ -233,22 +230,22 @@
             this.label1.Text = "选择系部";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // searchingBox
+            // searchingBoxOuter
             // 
-            this.searchingBox.Controls.Add(this.textBox3);
-            this.searchingBox.Controls.Add(this.textBox2);
-            this.searchingBox.Controls.Add(this.textBox4);
-            this.searchingBox.Controls.Add(this.textBox1);
-            this.searchingBox.Controls.Add(this.label6);
-            this.searchingBox.Controls.Add(this.label5);
-            this.searchingBox.Controls.Add(this.label4);
-            this.searchingBox.Controls.Add(this.label3);
-            this.searchingBox.Location = new System.Drawing.Point(202, 3);
-            this.searchingBox.Name = "searchingBox";
-            this.searchingBox.Size = new System.Drawing.Size(281, 126);
-            this.searchingBox.TabIndex = 1;
-            this.searchingBox.TabStop = false;
-            this.searchingBox.Text = "查询条件";
+            this.searchingBoxOuter.Controls.Add(this.textBox3);
+            this.searchingBoxOuter.Controls.Add(this.textBox2);
+            this.searchingBoxOuter.Controls.Add(this.textBox4);
+            this.searchingBoxOuter.Controls.Add(this.textBox1);
+            this.searchingBoxOuter.Controls.Add(this.label6);
+            this.searchingBoxOuter.Controls.Add(this.label5);
+            this.searchingBoxOuter.Controls.Add(this.label4);
+            this.searchingBoxOuter.Controls.Add(this.label3);
+            this.searchingBoxOuter.Location = new System.Drawing.Point(202, 3);
+            this.searchingBoxOuter.Name = "searchingBoxOuter";
+            this.searchingBoxOuter.Size = new System.Drawing.Size(281, 126);
+            this.searchingBoxOuter.TabIndex = 1;
+            this.searchingBoxOuter.TabStop = false;
+            this.searchingBoxOuter.Text = "查询条件";
             // 
             // textBox3
             // 
@@ -323,17 +320,17 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "性别";
             // 
-            // regionBox
+            // regionBoxOuter
             // 
-            this.regionBox.Controls.Add(this.radioButton3);
-            this.regionBox.Controls.Add(this.radioButton2);
-            this.regionBox.Controls.Add(this.radioButton1);
-            this.regionBox.Location = new System.Drawing.Point(489, 3);
-            this.regionBox.Name = "regionBox";
-            this.regionBox.Size = new System.Drawing.Size(112, 126);
-            this.regionBox.TabIndex = 2;
-            this.regionBox.TabStop = false;
-            this.regionBox.Text = "选择校区";
+            this.regionBoxOuter.Controls.Add(this.radioButton3);
+            this.regionBoxOuter.Controls.Add(this.radioButton2);
+            this.regionBoxOuter.Controls.Add(this.radioButton1);
+            this.regionBoxOuter.Location = new System.Drawing.Point(489, 3);
+            this.regionBoxOuter.Name = "regionBoxOuter";
+            this.regionBoxOuter.Size = new System.Drawing.Size(112, 126);
+            this.regionBoxOuter.TabIndex = 2;
+            this.regionBoxOuter.TabStop = false;
+            this.regionBoxOuter.Text = "选择校区";
             // 
             // radioButton3
             // 
@@ -371,17 +368,17 @@
             this.radioButton1.Text = "文理学部";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // spiecesBox
+            // spiecesBoxOuter
             // 
-            this.spiecesBox.Controls.Add(this.radioButton4);
-            this.spiecesBox.Controls.Add(this.radioButton5);
-            this.spiecesBox.Controls.Add(this.radioButton6);
-            this.spiecesBox.Location = new System.Drawing.Point(607, 3);
-            this.spiecesBox.Name = "spiecesBox";
-            this.spiecesBox.Size = new System.Drawing.Size(102, 126);
-            this.spiecesBox.TabIndex = 3;
-            this.spiecesBox.TabStop = false;
-            this.spiecesBox.Text = "选择学生类别";
+            this.spiecesBoxOuter.Controls.Add(this.radioButton4);
+            this.spiecesBoxOuter.Controls.Add(this.radioButton5);
+            this.spiecesBoxOuter.Controls.Add(this.radioButton6);
+            this.spiecesBoxOuter.Location = new System.Drawing.Point(607, 3);
+            this.spiecesBoxOuter.Name = "spiecesBoxOuter";
+            this.spiecesBoxOuter.Size = new System.Drawing.Size(102, 126);
+            this.spiecesBoxOuter.TabIndex = 3;
+            this.spiecesBoxOuter.TabStop = false;
+            this.spiecesBoxOuter.Text = "选择学生类别";
             // 
             // radioButton4
             // 
@@ -419,16 +416,16 @@
             this.radioButton6.Text = "在校学生";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
-            // operBox
+            // operBoxOuter
             // 
-            this.operBox.Controls.Add(this.button6);
-            this.operBox.Controls.Add(this.button5);
-            this.operBox.Controls.Add(this.button4);
-            this.operBox.Location = new System.Drawing.Point(715, 3);
-            this.operBox.Name = "operBox";
-            this.operBox.Size = new System.Drawing.Size(114, 126);
-            this.operBox.TabIndex = 4;
-            this.operBox.TabStop = false;
+            this.operBoxOuter.Controls.Add(this.button6);
+            this.operBoxOuter.Controls.Add(this.button5);
+            this.operBoxOuter.Controls.Add(this.button4);
+            this.operBoxOuter.Location = new System.Drawing.Point(715, 3);
+            this.operBoxOuter.Name = "operBoxOuter";
+            this.operBoxOuter.Size = new System.Drawing.Size(114, 126);
+            this.operBoxOuter.TabIndex = 4;
+            this.operBoxOuter.TabStop = false;
             // 
             // button6
             // 
@@ -481,13 +478,13 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.IDBox);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.nameBox);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.classBox);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.schoolBox);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
@@ -495,12 +492,12 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 
-            // textBox8
+            // IDBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(67, 96);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 7;
+            this.IDBox.Location = new System.Drawing.Point(67, 96);
+            this.IDBox.Name = "IDBox";
+            this.IDBox.Size = new System.Drawing.Size(100, 20);
+            this.IDBox.TabIndex = 7;
             // 
             // label10
             // 
@@ -511,12 +508,12 @@
             this.label10.TabIndex = 6;
             this.label10.Text = "学生学号";
             // 
-            // textBox7
+            // nameBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(67, 70);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 5;
+            this.nameBox.Location = new System.Drawing.Point(67, 70);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(100, 20);
+            this.nameBox.TabIndex = 5;
             // 
             // label9
             // 
@@ -527,12 +524,12 @@
             this.label9.TabIndex = 4;
             this.label9.Text = "学生姓名";
             // 
-            // textBox6
+            // classBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(67, 42);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 3;
+            this.classBox.Location = new System.Drawing.Point(67, 42);
+            this.classBox.Name = "classBox";
+            this.classBox.Size = new System.Drawing.Size(100, 20);
+            this.classBox.TabIndex = 3;
             // 
             // label8
             // 
@@ -543,12 +540,12 @@
             this.label8.TabIndex = 2;
             this.label8.Text = "所在班级";
             // 
-            // textBox5
+            // schoolBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(67, 16);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 1;
+            this.schoolBox.Location = new System.Drawing.Point(67, 16);
+            this.schoolBox.Name = "schoolBox";
+            this.schoolBox.Size = new System.Drawing.Size(100, 20);
+            this.schoolBox.TabIndex = 1;
             // 
             // label7
             // 
@@ -561,13 +558,13 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox9);
+            this.groupBox3.Controls.Add(this.healthBox);
             this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.textBox10);
+            this.groupBox3.Controls.Add(this.genderBox);
             this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.textBox11);
+            this.groupBox3.Controls.Add(this.typeBox);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.textBox12);
+            this.groupBox3.Controls.Add(this.regionBox);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Location = new System.Drawing.Point(209, 3);
             this.groupBox3.Name = "groupBox3";
@@ -575,12 +572,12 @@
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             // 
-            // textBox9
+            // healthBox
             // 
-            this.textBox9.Location = new System.Drawing.Point(81, 96);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 15;
+            this.healthBox.Location = new System.Drawing.Point(81, 96);
+            this.healthBox.Name = "healthBox";
+            this.healthBox.Size = new System.Drawing.Size(100, 20);
+            this.healthBox.TabIndex = 15;
             // 
             // label11
             // 
@@ -591,12 +588,12 @@
             this.label11.TabIndex = 14;
             this.label11.Text = "健康状况";
             // 
-            // textBox10
+            // genderBox
             // 
-            this.textBox10.Location = new System.Drawing.Point(81, 70);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 13;
+            this.genderBox.Location = new System.Drawing.Point(81, 70);
+            this.genderBox.Name = "genderBox";
+            this.genderBox.Size = new System.Drawing.Size(100, 20);
+            this.genderBox.TabIndex = 13;
             // 
             // label12
             // 
@@ -607,12 +604,12 @@
             this.label12.TabIndex = 12;
             this.label12.Text = "学生性别";
             // 
-            // textBox11
+            // typeBox
             // 
-            this.textBox11.Location = new System.Drawing.Point(81, 42);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 11;
+            this.typeBox.Location = new System.Drawing.Point(81, 42);
+            this.typeBox.Name = "typeBox";
+            this.typeBox.Size = new System.Drawing.Size(100, 20);
+            this.typeBox.TabIndex = 11;
             // 
             // label13
             // 
@@ -623,12 +620,12 @@
             this.label13.TabIndex = 10;
             this.label13.Text = "学生类别";
             // 
-            // textBox12
+            // regionBox
             // 
-            this.textBox12.Location = new System.Drawing.Point(81, 16);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 9;
+            this.regionBox.Location = new System.Drawing.Point(81, 16);
+            this.regionBox.Name = "regionBox";
+            this.regionBox.Size = new System.Drawing.Size(100, 20);
+            this.regionBox.TabIndex = 9;
             // 
             // label14
             // 
@@ -641,13 +638,13 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.textBox13);
+            this.groupBox4.Controls.Add(this.phoneBox);
             this.groupBox4.Controls.Add(this.label15);
-            this.groupBox4.Controls.Add(this.textBox14);
+            this.groupBox4.Controls.Add(this.postBox);
             this.groupBox4.Controls.Add(this.label16);
-            this.groupBox4.Controls.Add(this.textBox15);
+            this.groupBox4.Controls.Add(this.dateBox);
             this.groupBox4.Controls.Add(this.label17);
-            this.groupBox4.Controls.Add(this.textBox16);
+            this.groupBox4.Controls.Add(this.IDCardBox);
             this.groupBox4.Controls.Add(this.label18);
             this.groupBox4.Location = new System.Drawing.Point(415, 3);
             this.groupBox4.Name = "groupBox4";
@@ -655,12 +652,12 @@
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             // 
-            // textBox13
+            // phoneBox
             // 
-            this.textBox13.Location = new System.Drawing.Point(67, 96);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 7;
+            this.phoneBox.Location = new System.Drawing.Point(67, 96);
+            this.phoneBox.Name = "phoneBox";
+            this.phoneBox.Size = new System.Drawing.Size(100, 20);
+            this.phoneBox.TabIndex = 7;
             // 
             // label15
             // 
@@ -671,12 +668,12 @@
             this.label15.TabIndex = 6;
             this.label15.Text = "家庭电话";
             // 
-            // textBox14
+            // postBox
             // 
-            this.textBox14.Location = new System.Drawing.Point(67, 70);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 5;
+            this.postBox.Location = new System.Drawing.Point(67, 70);
+            this.postBox.Name = "postBox";
+            this.postBox.Size = new System.Drawing.Size(100, 20);
+            this.postBox.TabIndex = 5;
             // 
             // label16
             // 
@@ -687,12 +684,12 @@
             this.label16.TabIndex = 4;
             this.label16.Text = "家庭邮编";
             // 
-            // textBox15
+            // dateBox
             // 
-            this.textBox15.Location = new System.Drawing.Point(67, 42);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 3;
+            this.dateBox.Location = new System.Drawing.Point(67, 42);
+            this.dateBox.Name = "dateBox";
+            this.dateBox.Size = new System.Drawing.Size(100, 20);
+            this.dateBox.TabIndex = 3;
             // 
             // label17
             // 
@@ -703,12 +700,12 @@
             this.label17.TabIndex = 2;
             this.label17.Text = "出生日期";
             // 
-            // textBox16
+            // IDCardBox
             // 
-            this.textBox16.Location = new System.Drawing.Point(67, 16);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 1;
+            this.IDCardBox.Location = new System.Drawing.Point(67, 16);
+            this.IDCardBox.Name = "IDCardBox";
+            this.IDCardBox.Size = new System.Drawing.Size(100, 20);
+            this.IDCardBox.TabIndex = 1;
             // 
             // label18
             // 
@@ -741,35 +738,35 @@
             this.gv.AllowUserToDeleteRows = false;
             this.gv.AllowUserToResizeColumns = false;
             this.gv.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.gv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gv.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gv.DefaultCellStyle = dataGridViewCellStyle5;
             this.gv.Location = new System.Drawing.Point(2, 2);
             this.gv.Margin = new System.Windows.Forms.Padding(2);
             this.gv.Name = "gv";
             this.gv.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gv.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gv.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.gv.RowTemplate.Height = 24;
             this.gv.Size = new System.Drawing.Size(838, 155);
             this.gv.TabIndex = 0;
@@ -872,15 +869,15 @@
             this.Text = "学生档案管理";
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.classBox.ResumeLayout(false);
-            this.classBox.PerformLayout();
-            this.searchingBox.ResumeLayout(false);
-            this.searchingBox.PerformLayout();
-            this.regionBox.ResumeLayout(false);
-            this.regionBox.PerformLayout();
-            this.spiecesBox.ResumeLayout(false);
-            this.spiecesBox.PerformLayout();
-            this.operBox.ResumeLayout(false);
+            this.classBoxOuter.ResumeLayout(false);
+            this.classBoxOuter.PerformLayout();
+            this.searchingBoxOuter.ResumeLayout(false);
+            this.searchingBoxOuter.PerformLayout();
+            this.regionBoxOuter.ResumeLayout(false);
+            this.regionBoxOuter.PerformLayout();
+            this.spiecesBoxOuter.ResumeLayout(false);
+            this.spiecesBoxOuter.PerformLayout();
+            this.operBoxOuter.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -906,12 +903,12 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.GroupBox classBox;
+        private System.Windows.Forms.GroupBox classBoxOuter;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox searchingBox;
-        private System.Windows.Forms.GroupBox regionBox;
-        private System.Windows.Forms.GroupBox spiecesBox;
-        private System.Windows.Forms.GroupBox operBox;
+        private System.Windows.Forms.GroupBox searchingBoxOuter;
+        private System.Windows.Forms.GroupBox regionBoxOuter;
+        private System.Windows.Forms.GroupBox spiecesBoxOuter;
+        private System.Windows.Forms.GroupBox operBoxOuter;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -935,31 +932,31 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox IDBox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox nameBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox classBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox schoolBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox healthBox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox genderBox;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox typeBox;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox regionBox;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox phoneBox;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox postBox;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox dateBox;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox IDCardBox;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;

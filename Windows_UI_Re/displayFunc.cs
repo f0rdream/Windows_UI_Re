@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,46 +12,60 @@ namespace Windows_UI_Re
     public partial class MainForm : Form
     {
         private string dataPath = "./data.xml";
-        private void SetGrid()
+        private List<Student> studentArr;
+        
+        private void SetTextBox(int rownumber = 0)
         {
-            var query = GetXMLData();
-
-            gv.DataSource = query;
-
-            int rownumber = 1;
-            nameBox.Text = gv.Rows[rownumber].Cells[0].Value.ToString();
-            IDBox.Text = gv.Rows[rownumber].Cells[1].Value.ToString();
-            genderBox.Text = gv.Rows[rownumber].Cells[2].Value.ToString();
-            classBox.Text = gv.Rows[rownumber].Cells[3].Value.ToString();
-            schoolBox.Text = gv.Rows[rownumber].Cells[4].Value.ToString();
-            regionBox.Text = gv.Rows[rownumber].Cells[5].Value.ToString();
-            typeBox.Text = gv.Rows[rownumber].Cells[6].Value.ToString();
-            healthBox.Text = gv.Rows[rownumber].Cells[7].Value.ToString();
-            IDCardBox.Text = gv.Rows[rownumber].Cells[8].Value.ToString();
-            dateBox.Text = gv.Rows[rownumber].Cells[9].Value.ToString();
-            postBox.Text = gv.Rows[rownumber].Cells[10].Value.ToString();
-            phoneBox.Text = gv.Rows[rownumber].Cells[11].Value.ToString();
+            nameBox.Text = studentArr[rownumber].Name;
+            IDBox.Text = studentArr[rownumber].ID.ToString();
+            genderBox.Text = studentArr[rownumber].Gender;
+            classBox.Text = studentArr[rownumber].StuClass;
+            schoolBox.Text = studentArr[rownumber].School;
+            regionBox.Text = studentArr[rownumber].Region;
+            typeBox.Text = studentArr[rownumber].Type;
+            healthBox.Text = studentArr[rownumber].Health;
+            IDCardBox.Text = studentArr[rownumber].IDCard.ToString();
+            dateBox.Text = studentArr[rownumber].StuDate.ToString();
+            postBox.Text = studentArr[rownumber].PostNum.ToString();
+            phoneBox.Text = studentArr[rownumber].PhoneNum.ToString();
         }
         private void DisplayGrid()
         {
-            SetGrid();
+            DataTable dt = new DataTable();
+            DataColumn col1 = new DataColumn("系部", typeof(string));
+            DataColumn col2 = new DataColumn("班级", typeof(string));
+            DataColumn col3 = new DataColumn("学号", typeof(string));
+            DataColumn col4 = new DataColumn("姓名", typeof(string));
+            DataColumn col5 = new DataColumn("性别", typeof(string));
+            DataColumn col6 = new DataColumn("所在校区", typeof(string));
+            DataColumn col7 = new DataColumn("学生类别", typeof(string));
+            
+            
+            dt.Columns.Add(col1);
+            dt.Columns.Add(col2);
+            dt.Columns.Add(col3);
+            dt.Columns.Add(col4);
+            dt.Columns.Add(col5);
+            dt.Columns.Add(col6);
+            dt.Columns.Add(col7);
+            
+
+            gv.DataSource = dt.DefaultView;
+            studentArr = GetXMLData();
+            for (var i = 0; i < studentArr.Count; i++)
+            {
+                DataRow dr = dt.NewRow();
+                dr[0] = studentArr[i].School;
+                dr[1] = studentArr[i].StuClass;
+                dr[2] = studentArr[i].ID.ToString();
+                dr[3] = studentArr[i].Name;
+                dr[4] = studentArr[i].Gender;
+                dr[5] = studentArr[i].Region;
+                dr[6] = studentArr[i].Type;
+                dt.Rows.Add(dr);
+            }
+            SetTextBox();
             AmountStu();
-        }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int rownumber = gv.CurrentCell.RowIndex;
-            nameBox.Text = gv.Rows[rownumber].Cells[0].Value.ToString();
-            IDBox.Text = gv.Rows[rownumber].Cells[1].Value.ToString();
-            genderBox.Text = gv.Rows[rownumber].Cells[2].Value.ToString();
-            classBox.Text = gv.Rows[rownumber].Cells[3].Value.ToString();
-            schoolBox.Text = gv.Rows[rownumber].Cells[4].Value.ToString();
-            regionBox.Text = gv.Rows[rownumber].Cells[5].Value.ToString();
-            typeBox.Text = gv.Rows[rownumber].Cells[6].Value.ToString();
-            healthBox.Text = gv.Rows[rownumber].Cells[7].Value.ToString();
-            IDCardBox.Text = gv.Rows[rownumber].Cells[8].Value.ToString();
-            dateBox.Text = gv.Rows[rownumber].Cells[9].Value.ToString();
-            postBox.Text = gv.Rows[rownumber].Cells[10].Value.ToString();
-            phoneBox.Text = gv.Rows[rownumber].Cells[11].Value.ToString();
         }
         private List<Student> GetXMLData()
         {
@@ -95,10 +110,10 @@ namespace Windows_UI_Re
             xDoc.Save(dataPath);
             DisplayGrid();
         }
-        private void DelDoc(int RowNum)
+        private void DelDoc(int rowNum)
         {
             var xDoc = XDocument.Load(dataPath);
-            var stu = xDoc.Descendants("Student").ElementAt(RowNum);
+            var stu = xDoc.Descendants("Student").ElementAt(rowNum);
             stu.Remove();
             xDoc.Save(dataPath);
             DisplayGrid();
@@ -132,7 +147,7 @@ namespace Windows_UI_Re
             int boyNum = 0;
             for (int i = 0; i < stuNum; i++)
             {
-                if (Convert.ToString(gv.Rows[i].Cells[2].Value) == "Male")
+                if (Convert.ToString(gv.Rows[i].Cells[4].Value) == "Male")
                 {
                     boyNum++;
                 }

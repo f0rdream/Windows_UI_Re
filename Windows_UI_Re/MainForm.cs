@@ -61,19 +61,21 @@ namespace Windows_UI_Re
         }      
         private void button6_Click(object sender, EventArgs e)
         {
-            int rowNum = gv.CurrentCell.RowIndex;
-            DelDoc(rowNum);
+            DelDoc(gv.CurrentCell.RowIndex);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             AddDoc();
         }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SetTextBox(gv.CurrentCell.RowIndex);
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int rowNum = gv.CurrentCell.RowIndex;
-            DelDoc(rowNum);
+            DelDoc(gv.CurrentCell.RowIndex);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

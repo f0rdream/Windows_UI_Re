@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -96,12 +96,13 @@
             this.gv = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.boyCountBox = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.girlCountBox = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.studentCountBox = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.classBoxOuter.SuspendLayout();
@@ -134,6 +135,7 @@
             // 
             // button3
             // 
+            this.button3.Image = global::Windows_UI_Re.Properties.Resources.icon3;
             this.button3.Location = new System.Drawing.Point(99, 20);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(66, 24);
@@ -143,6 +145,7 @@
             // 
             // button2
             // 
+            this.button2.Image = global::Windows_UI_Re.Properties.Resources.icon4;
             this.button2.Location = new System.Drawing.Point(186, 20);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(66, 24);
@@ -152,6 +155,7 @@
             // 
             // button1
             // 
+            this.button1.Image = global::Windows_UI_Re.Properties.Resources.icon1;
             this.button1.Location = new System.Drawing.Point(12, 20);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(66, 24);
@@ -738,35 +742,35 @@
             this.gv.AllowUserToDeleteRows = false;
             this.gv.AllowUserToResizeColumns = false;
             this.gv.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.gv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gv.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gv.DefaultCellStyle = dataGridViewCellStyle8;
             this.gv.Location = new System.Drawing.Point(2, 2);
             this.gv.Margin = new System.Windows.Forms.Padding(2);
             this.gv.Name = "gv";
             this.gv.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gv.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gv.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.gv.RowTemplate.Height = 24;
             this.gv.Size = new System.Drawing.Size(838, 155);
             this.gv.TabIndex = 0;
@@ -784,11 +788,12 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.textBox19);
+            this.groupBox5.Controls.Add(this.button7);
+            this.groupBox5.Controls.Add(this.boyCountBox);
             this.groupBox5.Controls.Add(this.label21);
-            this.groupBox5.Controls.Add(this.textBox18);
+            this.groupBox5.Controls.Add(this.girlCountBox);
             this.groupBox5.Controls.Add(this.label20);
-            this.groupBox5.Controls.Add(this.textBox17);
+            this.groupBox5.Controls.Add(this.studentCountBox);
             this.groupBox5.Controls.Add(this.label19);
             this.groupBox5.Location = new System.Drawing.Point(2, 2);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
@@ -798,14 +803,14 @@
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
             // 
-            // textBox19
+            // boyCountBox
             // 
-            this.textBox19.Location = new System.Drawing.Point(224, 15);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ReadOnly = true;
-            this.textBox19.Size = new System.Drawing.Size(76, 20);
-            this.textBox19.TabIndex = 5;
+            this.boyCountBox.Location = new System.Drawing.Point(224, 15);
+            this.boyCountBox.Margin = new System.Windows.Forms.Padding(2);
+            this.boyCountBox.Name = "boyCountBox";
+            this.boyCountBox.ReadOnly = true;
+            this.boyCountBox.Size = new System.Drawing.Size(76, 20);
+            this.boyCountBox.TabIndex = 5;
             // 
             // label21
             // 
@@ -817,14 +822,14 @@
             this.label21.TabIndex = 4;
             this.label21.Text = "男生人数";
             // 
-            // textBox18
+            // girlCountBox
             // 
-            this.textBox18.Location = new System.Drawing.Point(376, 14);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(76, 20);
-            this.textBox18.TabIndex = 3;
+            this.girlCountBox.Location = new System.Drawing.Point(376, 14);
+            this.girlCountBox.Margin = new System.Windows.Forms.Padding(2);
+            this.girlCountBox.Name = "girlCountBox";
+            this.girlCountBox.ReadOnly = true;
+            this.girlCountBox.Size = new System.Drawing.Size(76, 20);
+            this.girlCountBox.TabIndex = 3;
             // 
             // label20
             // 
@@ -836,14 +841,14 @@
             this.label20.TabIndex = 2;
             this.label20.Text = "女生人数";
             // 
-            // textBox17
+            // studentCountBox
             // 
-            this.textBox17.Location = new System.Drawing.Point(77, 15);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(76, 20);
-            this.textBox17.TabIndex = 1;
+            this.studentCountBox.Location = new System.Drawing.Point(77, 15);
+            this.studentCountBox.Margin = new System.Windows.Forms.Padding(2);
+            this.studentCountBox.Name = "studentCountBox";
+            this.studentCountBox.ReadOnly = true;
+            this.studentCountBox.Size = new System.Drawing.Size(76, 20);
+            this.studentCountBox.TabIndex = 1;
             // 
             // label19
             // 
@@ -854,6 +859,16 @@
             this.label19.Size = new System.Drawing.Size(55, 13);
             this.label19.TabIndex = 0;
             this.label19.Text = "学生人数";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(734, 12);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "排序";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // MainForm
             // 
@@ -963,12 +978,13 @@
         private System.Windows.Forms.DataGridView gv;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox boyCountBox;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox girlCountBox;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox studentCountBox;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button button7;
     }
 }
 

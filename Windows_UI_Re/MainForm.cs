@@ -82,5 +82,10 @@ namespace Windows_UI_Re
         {
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            displayStu();
+        }
     }
 }

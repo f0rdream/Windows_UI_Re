@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -154,9 +155,35 @@ namespace Windows_UI_Re
             }
             int girlNum = stuNum - boyNum;
 
-            textBox17.Text = Convert.ToString(stuNum);
-            textBox19.Text = Convert.ToString(boyNum);
-            textBox18.Text = Convert.ToString(girlNum);
+            studentCountBox.Text = Convert.ToString(stuNum);
+            boyCountBox.Text = Convert.ToString(boyNum);
+            girlCountBox.Text = Convert.ToString(girlNum);
+        }
+        private static void bubbleSort(List<Student> unsorted)
+        {
+            for (int i = 0; i < unsorted.Count; i++)
+            {
+                for (int j = i; j < unsorted.Count; j++)
+                {
+                    if (unsorted[i].ID > unsorted[j].ID)
+                    {
+                        Student temp = unsorted[i];
+                        unsorted[i] = unsorted[j];
+                        unsorted[j] = temp;
+                    }
+                }
+            }
+        }
+
+        private void displayStu()
+        {
+            bubbleSort(studentArr);
+            String messageDis = "";
+            foreach (Student item in studentArr)
+            {
+                messageDis += item.ID + " " + item.Name + "\n";
+            }
+            MessageBox.Show(messageDis);
         }
     }
 }
